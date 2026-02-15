@@ -1,5 +1,7 @@
 # PolyPact: Multimodal AI Paralegal Platform
 
+https://lexis-ai-iota.vercel.app/
+
 PolyPact is a state-of-the-art multimodal AI Paralegal Platform designed to revolutionize legal reasoning and case management. Built with a focus on efficiency, security, and ultra-high performance, it utilizes a state-driven "Case Container" model to provide isolated legal contexts and automated legal intelligence.
 
 ## 🚀 Key Features
