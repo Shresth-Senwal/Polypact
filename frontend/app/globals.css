@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .safe-area-inset-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .safe-area-inset-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+:root {
+  /* Ultra-Neutral Midnight Aesthetic */
+  --primary: #1DB954;
+  --primary-hover: #1ed760;
+  --background: #08090a;
+  --surface: #111315;
+  --surface-darker: #050607;
+  --border: #1e2124;
+  --text-main: #ffffff;
+  --text-muted: #8a8d91;
+
+  --foreground: #ffffff;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-darker: var(--surface-darker);
+  --color-border: var(--border);
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: Inter, "Noto Sans", sans-serif;
+  --font-legal: "Times New Roman", Times, serif;
+  --font-sans: Inter, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-legal {
+  font-family: var(--font-legal);
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  font-display: block;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Premium UI Utilities */
+.glass {
+  background: rgba(17, 19, 21, 0.4) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.glass-dark {
+  background: rgba(8, 9, 10, 0.6) !important;
+  backdrop-filter: blur(40px) !important;
+  -webkit-backdrop-filter: blur(40px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.03) !important;
+}
+
+@keyframes sweep {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.5;
+  }
+
+  80% {
+    opacity: 0.5;
+  }
+
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+.sweep-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.sweep-element {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(29, 185, 84, 0.2), transparent);
+  animation: sweep 4s infinite;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.hud-font {
+  font-family: 'Inter', monospace;
+  letter-spacing: 0.15em;
+}
