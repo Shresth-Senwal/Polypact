@@ -4,7 +4,7 @@
 PolyPact is a state-of-the-art multimodal AI Paralegal Platform designed to revolutionize legal reasoning and case management. Built with a focus on efficiency, security, and ultra-high performance, it utilizes a state-driven "Case Container" model to provide isolated legal contexts and automated legal intelligence.
 
 ## 🚀 Key Features
-- **High-Fidelity Vision AI OCR**: Powered by Gemini 2.5 Flash Lite, extracting text, handwriting, and anomalies from complex legal documents and scanned PDFs with deep analysis.
+- **High-Fidelity Vision AI OCR**: Powered by Gemini 3.1 Flash Lite, extracting text, handwriting, and anomalies from complex legal documents and scanned PDFs with deep analysis.
 - **AI Legal Chat**: Context-aware legal assistance supporting multiple distinct sessions per case, powered by Cydonia 24B (TheDrummer).
 - **Strategy Generation**: Professional legal reasoning engine supporting redrafting, clause-level favorability analysis, and reflexive intelligence (Jurisdiction/Fact checking).
 - **Case Dashboard (Spaces)**: Premium Spotify-inspired UI/UX for managing isolated RAG containers and reviewing real-time AI insights.
@@ -16,7 +16,7 @@ PolyPact is a state-of-the-art multimodal AI Paralegal Platform designed to revo
 ## 🛠️ Technical Stack (Strict)
 ### Frontend
 - **Framework**: Next.js 16+ (App Router)
-- **OCR Engine**: Gemini 2.5 Flash Lite (via Backend Proxy)
+- **OCR Engine**: Gemini 3.1 Flash Lite (via Backend Proxy)
 - **Styling**: Tailwind CSS v4 (Spotify Aesthetic)
 - **State**: Zustand (User Mode & Global State Management)
 - **Auth**: Firebase Client SDK
@@ -24,7 +24,7 @@ PolyPact is a state-of-the-art multimodal AI Paralegal Platform designed to revo
 ### Backend (Poly-Core)
 - **Runtime**: Bun (Strict)
 - **Framework**: Hono (Optimized for ultra-low latency)
-- **AI Orchestration**: OpenRouter (Cydonia 24B) & Gemini 2.5 Flash Lite
+- **AI Orchestration**: OpenRouter (Cydonia 24B) & Gemini 3.1 Flash Lite
 - **Legal Data**: Indian Kanoon API (22+ High Courts, Supreme Court)
 - **Security**: Custom dual-layer Rate Limiting (500 req / 15min)
 
